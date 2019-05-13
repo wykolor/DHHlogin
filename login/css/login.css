@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    max-height: 999999px;
+}
+html,body{
+    width:100%;
+    height:100%;
+    scroll-behavior:smooth;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+img{vertical-align:top;border:none}
+body{
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+    height:100%;
+    background: url("../images/big.png") no-repeat;
+    background-size:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login{
+    display: flex;
+    box-shadow: 4px 8px 20px #6489bacf;
+}
+.login>p{
+    width: 100%;
+    height: 100%;
+}
+.login>p img{
+    width: 100%;
+    height: 100%;
+}
+#form{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 80px 40px 10px; 
+}
+#form>p{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 24px;
+}
+#form>p:nth-child(1),#form>p:nth-child(2){
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+#form>p:nth-child(3){
+    text-align: right;
+    color:#5094d5;
+    font-size: 14px;
+}
+#form>p:nth-child(4) button{
+    background-color: #559fe6;
+    color: #fff;
+    border: none;
+    line-height: 36px;
+    width: 80%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+#form>p:nth-child(5){
+    color: #808080;
+    font-size: 14px;
+}
+#form>p:nth-child(5) span{
+    color: #5094d5;
+    text-decoration: underline;
+}
+#form>p input{
+    border: none;
+    width: 90%;
+    outline: none;
+}
+#form>p:nth-child(1) span,#form>p:nth-child(2) span{
+    /* margin-right: 20px; */
+    color:#2a76bf;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+/* @-webkit-keyframes loading {
+    from {opacity: 1;width:1px;height:1px;}
+    to {opacity: 0.25;width:8px;height:8px;}
+} */
+/* div.spinner {
+    position: absolute;
+    top:50%;
+    left:50%;
+    display: inline-block;
+}
+div.spinner div {
+    width:8px;
+    height:8px;
+    background: #a4a2a4;
+    border:1px solid #fff;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    opacity: 0;
+    -webkit-animation: loading 2s linear infinite;
+    -webkit-border-radius: 30px;
+}
+div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -34px); -webkit-animation-delay: -0s;}
+div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -34px); -webkit-animation-delay: -1.8334s;}
+div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -34px); -webkit-animation-delay: -1.6668s;}
+div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -34px); -webkit-animation-delay: -1.5002s;}
+div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -34px); -webkit-animation-delay: -1.3336s;}
+div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -34px); -webkit-animation-delay: -1.167s;}
+div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -34px); -webkit-animation-delay: -1.0004s;}
+div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -34px); -webkit-animation-delay: -0.8338s;}
+div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -34px); -webkit-animation-delay: -0.6672s;}
+div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -34px); -webkit-animation-delay: -0.5006s;}
+div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -34px); -webkit-animation-delay: -0.334s;}
+div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -34px); -webkit-animation-delay: -0.1674s;} */
