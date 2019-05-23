@@ -21,4 +21,38 @@
         $(this).hide();
         $(".logining").show();
     })
+    // 倒计时显示处理
+    function countDownText(s) {
+        $("#timeCut").text(`${s}s后再获取`)
+    };
+    // 倒计时 60秒 不需要很精准
+    function countDown(times) {
+        const self = this;
+        // 时间间隔 1秒
+        const interval = 1000;
+        let count = 0;
+        self.timeCounter = setTimeout(countDownStart, interval);
+        // 定时器中的方法
+        function countDownStart() {
+            if (self.timeCounter == null) {
+                return false;
+            }
+            count++
+            countDownText(times - count + 1);
+            if (count > times) {
+                $("#timeCut").hide();
+                $("#getcode").show();
+                clearTimeout(self.timeCounter)
+            } else {
+                self.timeCounter = setTimeout(countDownStart, interval)
+            }
+        }
+    };
+    // 
+    $("#getcode").click(function(){
+        $('#yancode').css({width:'57%'})
+        $("#timeCut").show();
+        $(this).hide();
+        countDown(60);
+    })
 })
