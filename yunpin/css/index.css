@@ -28,23 +28,26 @@ html,body{
     -khtml-user-select:none;/*早期浏览器*/
     user-select:none;
 }
+a{
+    color: black;
+    text-decoration-line: none;
+}
 ul li,ol li,dl li{
     list-style: none;
 }
+/* 首页 */
 #box{
     width: 100%;
     height: 100%;
-    /* justify-content: center; 
-    align-items: center; 
-    display: flex; */
     background: url('../images/bg.jpg') no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+    position: relative;
 }
 #box>section{
     width: 324px;
     padding: 20px;
-    position: fixed;
+    position: absolute;
     bottom: 38%;
     left: 48%;
     display: flex;
@@ -63,17 +66,50 @@ ul li,ol li,dl li{
 #box>section .erweima span{
     font-size: 40px;
 }
-#box>ul{
-    padding-bottom: 50px;
-    position: fixed;
+#box>.footer{
+    position: absolute;
     bottom: 0;
-    left: 34%;
-    color: #666464;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 30px;
 }
-#box>ul li span.address{
-    margin: 0 18px;
-    padding: 0 18px;
-    border: 1px solid #666464;
-    border-top: none;
-    border-bottom: none;
+#box>.footer ul{
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
+#box>.footer ul li{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #9d9a9a;
+}
+#box>.footer ul li a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+#box>.footer ul li:last-child{
+    border: none;
+}
+#box>.footer ul li a:hover{
+    color: rgb(12, 164, 235);
+    text-decoration: underline;
+}
+#box>.footer p{
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #888686;
+    letter-spacing: 1px;
+}
+#box>.footer p span:nth-child(2){
+    margin: 0 10px;
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+/* 关于我们 */
