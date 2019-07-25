@@ -113,3 +113,96 @@ ul li,ol li,dl li{
     border-right: 1px solid #ccc;
 }
 /* 关于我们 */
+#aboutus{
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+#aboutus ul{
+    display: flex;
+}
+#aboutus .header{
+    width: 100%;
+    background: url('../images/banner.jpg') no-repeat;
+    height: 350px;
+    background-size: 100% 100%;
+}
+#aboutus .main{
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* align-items: center; */
+    padding: 20px 0 0;
+}
+#aboutus .main .content{
+    width: 1000px;
+}
+#aboutus .main .content h6 span{
+   font-size: 14px;
+}
+#aboutus .main .content h6 span:first-child{
+    margin: 0 10px 0 0;
+}
+#aboutus .main .content ul{
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+#aboutus .main .content ul li{
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(102, 100, 100);
+}
+#aboutus .main .content ul.first-ul li{
+    text-align: center;
+    
+}
+#aboutus .main .content ul.first-ul li span{
+    font-size: 50px;
+}
+#aboutus .main .content ul.first-ul li h2{
+    margin: 10px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+    color:black;
+}
+#aboutus .main .content ul.second-ul li{
+    line-height: 20px;
+}
+#aboutus .main .content ul.second-ul li p{
+    margin: 0 0 10px;
+}
+#aboutus .main .content ul.second-ul li:nth-child(2){
+    border-left: 1.6px solid #ccc;
+    border-right: 1.6px solid #ccc;
+    padding: 0 106px;
+}
+#aboutus .main .content ul.second-ul li:nth-child(2) p span:first-child{
+    color: #caa132;
+}
+#aboutus .main .content ul.second-ul li:nth-child(3) p span:first-child{
+    color: #4fb4d1;
+}
+#aboutus .footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 40px 0 0;
+   text-align: center;
+}
+#aboutus .footer h2{
+    margin:0 0 20px;
+}
+#aboutus .footer ul{
+    justify-content: space-around;
+}
+#aboutus .footer ul li{
+    margin: 0 20px;
+}
+#aboutus .footer ul li img{
+    margin: 0 0 10px;
+}
