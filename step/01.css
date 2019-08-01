@@ -1,0 +1,62 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .step {
+            display: flex;
+            list-style: none;
+            margin: 200px 0;
+            overflow-x: auto;
+        }
+
+        .ui-step {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #999;
+        }
+
+        .ui-step-end .step-line {
+            visibility: hidden;
+        }
+        .ui-step .iconself{
+                font-size: 32px;
+        }
+        .ui-step .step-line {
+            width: 60%;
+            height: 2px;
+            background: #ccc;
+        }
+
+        .ui-step .step-icon>i {
+            display: block;
+        }
+
+        .ui-step-success {
+            color: green;
+        }
+
+        .ui-step-success .step-line {
+            background-color: green;
+        }
+
+        .ui-step-active {
+            color: #189fd9;
+        }
+
+        .ui-step-active .step-line {
+            background-color: #189fd9;
+        }
+
+        .ui-step-waiting {
+            color: #999;
+        }
+
+        .ui-step-waiting .step-line {
+            background-color: #999;
+        }
