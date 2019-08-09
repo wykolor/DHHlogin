@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>登录页面</title>
-		<!-- 引入样式文件 -->
-		<link rel="stylesheet" type="text/css" href="./css/login.css"/>
-		<!-- 引入字体图标样式库 -->
-		<link rel="stylesheet" type="text/css" href="./css/iconfont.css">
-	</head>
-	<body>
-		<div class="login">
-			<p><img src="./images/small.png" alt=""></p>
-			<form id="form" method="POST">
-				<!-- 输入用户名 -->
-				<p>
-					<span class="iconfont icon-yonghuming"></span><input type="text" name="username" id="username" placeholder="请输入用户名/密码"  />
-				</p>
-				<!-- 密码 -->
-				<p class="pwd">
-					<span class="iconfont icon-yanzhengma"></span><input type="password" name="password" id="password" placeholder="请输入密码" />
-				</p>
-				<!-- 验证码 默认隐藏 -->
-				<p class="yanzheng" style="display:none">
-					<span class="iconfont icon-yanzhengma"></span>
-					<input type="text" name="yancode" id="yancode" placeholder="请输入验证码" />
-					<span class="getcode" id="getcode">获取</span>
-					<span class="getcode" id="timeCut" style="display:none;color:#ccc"></span>
-				</p>
-				<p class="isyancode">手机验证码登录<span class="iconfont icon-youjiantou"></span></p>
-				<p style="display:none" class="ispwd">密码登录<span class="iconfont icon-youjiantou"></span></p>
-				<p class="submit">
-					<button id="sumbit">登录</button>
-				</p>
-				<!-- 登录中的loading -->
-				<div class="logining" style="display:none">
-					<div>
-						<div class="wrapper">
-								<div class="line1"></div>
-								<div class="line2"></div>
-								<div class="line3"></div>
-								<div class="line4"></div>
-								<div class="line5"></div>
-								<div class="line6"></div>
-								<div class="line7"></div>
-								<div class="line8"></div>
-								<div class="line9"></div>
-								<div class="line10"></div>
-								<div class="line11"></div>
-								<div class="line12"></div>
-							</div>
+
+<head>
+	<meta charset="utf-8">
+	<title>登录页面</title>
+	<!-- 引入样式文件 -->
+	<link rel="stylesheet" type="text/css" href="./css/login.css" />
+	<!-- 引入字体图标样式库 -->
+	<link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+</head>
+
+<body>
+	<div class="login">
+		<p><img src="./images/small.png" alt=""></p>
+		<form id="form" method="POST">
+			<!-- 输入用户名 -->
+			<p>
+				<span class="iconfont icon-yonghuming"></span><input type="text" name="username" id="username"
+					placeholder="请输入用户名/密码" />
+			</p>
+			<!-- 密码 -->
+			<p class="pwd">
+				<span class="iconfont icon-yanzhengma"></span><input type="password" name="password" id="password"
+					placeholder="请输入密码" />
+			</p>
+			<!-- 验证码 默认隐藏 -->
+			<p class="yanzheng" style="display:none">
+				<span class="iconfont icon-yanzhengma"></span>
+				<input type="text" name="yancode" id="yancode" placeholder="请输入验证码" />
+				<span class="getcode" id="getcode">获取</span>
+				<span class="getcode" id="timeCut" style="display:none;color:#ccc"></span>
+			</p>
+			<p class="isyancode">手机验证码登录<span class="iconfont icon-youjiantou"></span></p>
+			<p style="display:none" class="ispwd">密码登录<span class="iconfont icon-youjiantou"></span></p>
+			<p class="submit">
+				<button id="sumbit">登录</button>
+			</p>
+			<!-- 登录中的loading -->
+			<div class="logining" style="display:none">
+				<div>
+					<div class="wrapper">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+						<div class="line4"></div>
+						<div class="line5"></div>
+						<div class="line6"></div>
+						<div class="line7"></div>
+						<div class="line8"></div>
+						<div class="line9"></div>
+						<div class="line10"></div>
+						<div class="line11"></div>
+						<div class="line12"></div>
 					</div>
 				</div>
-				<p> 深圳开普乐信息服务有限公司 版权所有 <span>帮助 粤ICP备16072634号</span></p>
-			</form>
-		</div>
-	</body>
-	<!-- 引入jQueryCDN -->
-	<script src="./js/jquery.js"></script>
-	<!-- 引入js文件 -->
-	<script src="./js/login.js"></script>
-	<script type="text/javascript">
-		let pro = new Promise(function (resolve,reject){
-			
-		})
-	</script>
+			</div>
+			<p> 深圳开普乐信息服务有限公司 版权所有 <span>帮助 粤ICP备16072634号</span></p>
+		</form>
+	</div>
+</body>
+<!-- 引入jQueryCDN -->
+<script src="./js/jquery.js"></script>
+<!-- 引入js文件 -->
+<script src="./js/login.js"></script>
+<script type="text/javascript">
+	let pro = new Promise(function (resolve, reject) {
+
+	})
+</script>
+
 </html>

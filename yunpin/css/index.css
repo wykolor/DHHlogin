@@ -45,7 +45,7 @@ ul li,ol li,dl li{
     position: relative;
 }
 #box>section{
-    width: 324px;
+    width: 400px;
     padding: 20px;
     position: absolute;
     bottom: 38%;
@@ -55,13 +55,30 @@ ul li,ol li,dl li{
     align-items: center;
 }
 #box>section .downbtn{
-    width: 100px;
-    height:36px;
-    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     line-height: 36px;
     font-size: 18px;
     border: 1px solid black;
+    position: relative;
+}
+#box>section .downbtn .img-hover{
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+#box>section .downbtn:hover{
+    border-color: rgba(204, 75, 81, 0.685);
+    color: rgba(204, 75, 81, 0.685);
+}
+#box>section .downbtn span:first-child{
+    font-size: 20px;
 }
 #box>section .erweima span{
     font-size: 40px;
