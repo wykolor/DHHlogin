@@ -1,0 +1,99 @@
+/* 粗暴去除浏览器默认样式 */
+* {
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+body{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px;
+}
+.comment{
+	width: 100%;
+	background-color: #efefef;
+	box-sizing: border-box;
+}
+.comment h5{
+	background: linear-gradient(#fcfbfb, #d9d9d9);
+	color: black;
+	line-height: 32px;
+	padding: 0 0 0 10px;
+}
+.comment .commentbox{
+	width: 100%;
+	background-color: #efefef;
+	box-sizing: border-box;
+	padding: 0px 10px 10px;
+	font-size: 14px;
+	
+}
+/* 评论列表和回复列表 */
+.comment .commentbox .comment-list,
+.comment .commentbox .comment-list .reply-list{
+	width: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	margin: 10px 0 0;
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+/* 评论头像和回复头像 */
+.comment .commentbox .comment-list .comment-img,
+.comment .commentbox .comment-list .reply-img{
+	margin: 0 10px 0 0;
+	width: 36px;
+	height: 36px;
+}
+.comment .commentbox .comment-list .comment-reply,
+.comment .commentbox .comment-list .comment-reply .reply{
+	width: 100%;
+	box-sizing: border-box;
+}
+.comment .commentbox .comment-list .comment-reply .comment-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.comment .commentbox .comment-list .comment-reply .comment-info .reply-btn{
+	display: block;
+	padding: 6px 16px;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 3px;
+	background: linear-gradient(#fcfbfb, #d9d9d9);
+}
+/* 评论文字 */
+.comment .commentbox .comment-list .comment-reply .comment-txt{
+	box-sizing: border-box;
+	border-bottom: 1px solid #efefef;
+  padding: 10px 0;
+}
+.comment .commentbox .comment-list .comment-reply .comment-info label,
+.comment .commentbox .comment-list .comment-reply .reply-info label{
+	display: block;
+}
+.comment .commentbox .comment-list .comment-reply .comment-info label:first-child,
+.comment .commentbox .comment-list .comment-reply .reply-info label:first-child{
+	font-size: 22px;
+	color: #3997d0;
+}
+.comment .commentbox .comment-list .comment-reply .comment-info label:last-child,
+.comment .commentbox .comment-list .comment-reply .reply-info label:last-child{
+	color: #CCC;
+}
+.comment .commentbox .comment-list .comment-reply .reply ul{
+	display: flex;
+	align-items: center;
+}
+.comment .commentbox .comment-list .comment-reply .reply ul li{
+	margin: 0 10px 0 0;
+}
+.comment .commentbox .comment-list .comment-reply .reply ul li.icons{
+	font-size: 18px;
+	color: #9a9a9a;
+}
