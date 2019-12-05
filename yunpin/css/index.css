@@ -1,225 +1,186 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big,
-cite, code, del, dfn, em, font, img,
-ins, kbd, q, s, samp, small, strike,
-strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-center, u, b, i {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-    max-height: 999999px;
-}
-html,body{
-    width:100%;
-    height:100%;
-    scroll-behavior:smooth;
-    -moz-user-select:none;/*火狐*/
-    -webkit-user-select:none;/*webkit浏览器*/
-    -ms-user-select:none;/*IE10*/
-    -khtml-user-select:none;/*早期浏览器*/
-    user-select:none;
-}
-a{
-    color: black;
-    text-decoration-line: none;
-}
-ul li,ol li,dl li{
-    list-style: none;
-}
 /* 首页 */
-#box{
-    width: 100%;
-    height: 100%;
-    background: url('../images/bg.jpg') no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    position: relative;
+#box {
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
 }
-#box>section{
-    width: 400px;
-    padding: 20px;
-    position: absolute;
-    bottom: 38%;
-    left: 48%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#box > section {
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  bottom: 38%;
+  left: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#box>section .downbtn{
-    flex: 1;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    line-height: 36px;
-    font-size: 18px;
-    border: 1px solid black;
-    position: relative;
+#box > section .downbtn {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  line-height: 36px;
+  font-size: 18px;
+  border: 1px solid black;
+  position: relative;
 }
-#box>section .downbtn .img-hover{
-    position: absolute;
-    bottom: -120px;
-    left: 0;
-    width: 100%;
-    display: none;
+#box > section .downbtn .img-hover {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  width: 100%;
+  display: none;
 }
-#box>section .downbtn:hover{
-    border-color: rgba(204, 75, 81, 0.685);
-    color: rgba(204, 75, 81, 0.685);
+#box > section .downbtn:hover {
+  border-color: rgba(204, 75, 81, 0.685);
+  color: rgba(204, 75, 81, 0.685);
 }
-#box>section .downbtn span:first-child{
-    font-size: 20px;
+#box > section .downbtn span:first-child {
+  font-size: 20px;
 }
-#box>section .erweima span{
-    font-size: 40px;
+#box > section .erweima span {
+  font-size: 40px;
 }
-#box>.footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    padding: 0 0 30px;
+#box > .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 30px;
 }
-#box>.footer ul{
-    width: 650px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
+#box > .footer ul {
+  width: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
-#box>.footer ul li{
-    width: 25%;
-    text-align: center;
-    border-right: 1px solid #9d9a9a;
+#box > .footer ul li {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #9d9a9a;
 }
-#box>.footer ul li a{
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    
+#box > .footer ul li a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
 }
-#box>.footer ul li:last-child{
-    border: none;
+#box > .footer ul li:last-child {
+  border: none;
 }
-#box>.footer ul li a:hover{
-    color: rgb(12, 164, 235);
-    text-decoration: underline;
+#box > .footer ul li a:hover {
+  color: rgb(12, 164, 235);
+  text-decoration: underline;
 }
-#box>.footer p{
-    margin: 10px 0 0;
-    font-size: 13px;
-    color: #888686;
-    letter-spacing: 1px;
+#box > .footer p {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #888686;
+  letter-spacing: 1px;
 }
-#box>.footer p span:nth-child(2){
-    margin: 0 10px;
-    padding: 0 10px;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+#box > .footer p span:nth-child(2) {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 /* 关于我们 */
-#aboutus{
-    background: #f5f5f5;
-    width: 100%;
-    height: 100%;
+#aboutus {
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
 }
-#aboutus ul{
-    display: flex;
+#aboutus ul {
+  display: flex;
 }
-#aboutus .header{
-    width: 100%;
-    background: url('../images/banner.jpg') no-repeat;
-    height: 350px;
-    background-size: 100% 100%;
+#aboutus .header {
+  width: 100%;
+  background: url("../images/banner.jpg") no-repeat;
+  height: 350px;
+  background-size: 100% 100%;
 }
-#aboutus .main{
-    background-color: #fff;
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    box-sizing: border-box;
-    /* align-items: center; */
-    padding: 20px 0 0;
+#aboutus .main {
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  /* align-items: center; */
+  padding: 20px 0 0;
 }
-#aboutus .main .content{
-    width: 1000px;
+#aboutus .main .content {
+  width: 1000px;
 }
-#aboutus .main .content h6 span{
-   font-size: 14px;
+#aboutus .main .content h6 span {
+  font-size: 14px;
 }
-#aboutus .main .content h6 span:first-child{
-    margin: 0 10px 0 0;
+#aboutus .main .content h6 span:first-child {
+  margin: 0 10px 0 0;
 }
-#aboutus .main .content ul{
-    justify-content: space-between;
-    margin: 40px 0 0;
+#aboutus .main .content ul {
+  justify-content: space-between;
+  margin: 40px 0 0;
 }
-#aboutus .main .content ul li{
-    width: 20%;
-    text-align: center;
-    font-size: 14px;
-    color: rgb(102, 100, 100);
+#aboutus .main .content ul li {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(102, 100, 100);
 }
-#aboutus .main .content ul.first-ul li{
-    text-align: center;
-    
+#aboutus .main .content ul.first-ul li {
+  text-align: center;
 }
-#aboutus .main .content ul.first-ul li span{
-    font-size: 50px;
+#aboutus .main .content ul.first-ul li span {
+  font-size: 50px;
 }
-#aboutus .main .content ul.first-ul li h2{
-    margin: 10px 0 0;
-    font-size: 17px;
-    font-weight: bold;
-    color:black;
+#aboutus .main .content ul.first-ul li h2 {
+  margin: 10px 0 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
 }
-#aboutus .main .content ul.second-ul li{
-    line-height: 20px;
+#aboutus .main .content ul.second-ul li {
+  line-height: 20px;
 }
-#aboutus .main .content ul.second-ul li p{
-    margin: 0 0 10px;
+#aboutus .main .content ul.second-ul li p {
+  margin: 0 0 10px;
 }
-#aboutus .main .content ul.second-ul li:nth-child(2){
-    border-left: 1.6px solid #ccc;
-    border-right: 1.6px solid #ccc;
-    padding: 0 106px;
+#aboutus .main .content ul.second-ul li:nth-child(2) {
+  border-left: 1.6px solid #ccc;
+  border-right: 1.6px solid #ccc;
+  padding: 0 106px;
 }
-#aboutus .main .content ul.second-ul li:nth-child(2) p span:first-child{
-    color: #caa132;
+#aboutus .main .content ul.second-ul li:nth-child(2) p span:first-child {
+  color: #caa132;
 }
-#aboutus .main .content ul.second-ul li:nth-child(3) p span:first-child{
-    color: #4fb4d1;
+#aboutus .main .content ul.second-ul li:nth-child(3) p span:first-child {
+  color: #4fb4d1;
 }
-#aboutus .footer{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   margin: 40px 0 0;
-   text-align: center;
+#aboutus .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0 0;
+  text-align: center;
 }
-#aboutus .footer h2{
-    margin:0 0 20px;
+#aboutus .footer h2 {
+  margin: 0 0 20px;
 }
-#aboutus .footer ul{
-    justify-content: space-around;
+#aboutus .footer ul {
+  justify-content: space-around;
 }
-#aboutus .footer ul li{
-    margin: 0 20px;
+#aboutus .footer ul li {
+  margin: 0 20px;
 }
-#aboutus .footer ul li img{
-    margin: 0 0 10px;
+#aboutus .footer ul li img {
+  margin: 0 0 10px;
 }
