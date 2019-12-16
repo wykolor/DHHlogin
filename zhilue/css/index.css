@@ -1,0 +1,117 @@
+body {
+  background-color: #f8f8f8;
+}
+.zhiliu {
+  min-width: 900px;
+  height: 80%;
+  background: url("../images/zhilue.png") no-repeat;
+  background-size: 100% 100%;
+}
+.content {
+  width: 800px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header li {
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.header li:hover {
+  color: #eabb63;
+}
+.header li:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.down-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  width: 100%;
+  margin: 80px 0 40px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.main .title {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-shadow: 4px 4px 3px #000;
+}
+.main .desc {
+  line-height: 30px;
+}
+.main .title span:first-child {
+  font-size: 80px;
+  color: #eabb63;
+}
+.down-list li {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.down-list li:hover {
+  color: #eabb63;
+  border-color: #eabb63;
+}
+
+.down-list li p {
+  width: 100%;
+  height: 100%;
+}
+.down-list li p span:first-child {
+  font-size: 20px;
+}
+.down-list li p img {
+  width: 80%;
+  margin-top: 10px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.down-list li p:hover img {
+  opacity: 1;
+}
+.footer {
+  width: 800px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.footer ul li {
+  line-height: 36px;
+}
+.footer ul li span {
+  font-size: 18px;
+}
+.footer .focs-us {
+  display: flex;
+}
+.footer .focs-us img {
+  width: 100px;
+}
