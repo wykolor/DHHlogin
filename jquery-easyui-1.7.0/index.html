@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>客服聊天中心</title>
+    <link rel="stylesheet" type="text/css" href="./themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="./themes/icon.css" />
+    <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/font_1426500_oth3g2h8p9.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      #chat-tabs {
+        height: 100vh;
+        display: flex;
+        align-items: stretch;
+        min-width: 1000px;
+        border: none;
+      }
+      #chat-tabs .tabs-header-left {
+        background-color: #ccc;
+      }
+      #chat-tabs .tabs-panels-right {
+        position: relative;
+        background-color: #f5f5f5;
+      }
+      #chat-tabs .tabs-panels-right h1 {
+        background-color: #fff;
+      }
+      #chat-tabs .tabs-panels-right .panel-body {
+        background-color: #f5f5f5;
+      }
+
+      #chat-tabs .tabs-panels-right h1,
+      #chat-tabs .tabs-panels-right .chat-list,
+      #chat-tabs .tabs-panels-right .chat-btn {
+        padding: 20px;
+      }
+      /* #chat-tabs .tabs-panels-right .chat-list {
+        background-color: #f5f5f5;
+      } */
+      #chat-tabs .tabs-panels-right .chat-list li {
+        line-height: 2;
+        margin-bottom: 20px;
+      }
+      #chat-tabs .tabs-panels-right .chat-list li.right {
+        text-align: right;
+      }
+      #chat-tabs .tabs-panels-right .chat-btn {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        background-color: #fff;
+        align-items: flex-end;
+      }
+      #chat-tabs .tabs-panels-right .chat-btn .chat-msg {
+        flex: 5;
+        align-self: flex-start;
+      }
+      #chat-tabs .tabs-panels-right .chat-btn .chat-send {
+        flex: 2;
+      }
+      #chat-tabs .tabs-panels-right .chat-btn .chat-send .l-btn {
+        width: 20%;
+      }
+    </style>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.easyui.min.js"></script>
+  </head>
+
+  <body>
+    <div id="chat-tabs" class="easyui-tabs">
+      <div title="About" data-options="closable:true">
+        <h1>About</h1>
+        <ul class="chat-list">
+          <li>
+            <i
+              class="font_family icon-yonghu1"
+              style="font-size: 30px;color: orange;"
+            ></i>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            quod.
+          </li>
+          <li class="right">
+            Dolores fugiat soluta laborum facilis cumque at magni cupiditate
+            deserunt.
+            <i
+              class="font_family icon-kefu"
+              style="font-size: 36px;color: green;"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="font_family icon-yonghu1"
+              style="font-size: 30px;color: orange;"
+            ></i>
+            Ipsam ab iure aspernatur aliquid enim consectetur quidem, tempora
+            qui.
+          </li>
+          <li class="right">
+            Consequatur expedita exercitationem laudantium est neque, animi
+            vitae fuga tempore?
+            <i
+              class="font_family icon-kefu"
+              style="font-size: 36px;color: green;"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="font_family icon-yonghu1"
+              style="font-size: 30px;color: orange;"
+            ></i>
+            Explicabo non quisquam, consequuntur voluptates impedit quidem
+            blanditiis consectetur enim.
+          </li>
+          <li class="right">
+            Inventore reiciendis, aliquid aliquam blanditiis debitis sapiente
+            dolore quaerat tenetur.
+            <i
+              class="font_family icon-kefu"
+              style="font-size: 36px;color: green;"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="font_family icon-yonghu1"
+              style="font-size: 30px;color: orange;"
+            ></i>
+            Temporibus, illum accusamus! Amet vel facere fugit illo eos eum.
+          </li>
+          <li class="right">
+            Rerum dolor quo sed numquam quaerat unde id tempora quia?
+            <i
+              class="font_family icon-kefu"
+              style="font-size: 36px;color: green;"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="font_family icon-yonghu1"
+              style="font-size: 30px;color: orange;"
+            ></i>
+            Non nemo alias recusandae sequi et explicabo enim, eius voluptatum!
+          </li>
+          <li class="right">
+            Nesciunt quod sint officia ab, ex debitis ullam incidunt eaque!
+            <i
+              class="font_family icon-kefu"
+              style="font-size: 36px;color: green;"
+            ></i>
+          </li>
+        </ul>
+        <div class="chat-btn">
+          <div class="chat-msg">
+            <input
+              class="easyui-textbox"
+              data-options="multiline:true;"
+              style="width:60%;height: 100%;border: none;outline: none;"
+            />
+          </div>
+          <div class="chat-send">
+            <a id="btn" href="#" class="easyui-linkbutton">发送</a>
+          </div>
+        </div>
+      </div>
+      <div title="My Documents" data-options="closable:true">
+        <h1>My Documents</h1>
+        <ul class="chat-list">
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            quod.
+          </li>
+          <li class="right">
+            Dolores fugiat soluta laborum facilis cumque at magni cupiditate
+            deserunt.
+          </li>
+          <li>
+            Ipsam ab iure aspernatur aliquid enim consectetur quidem, tempora
+            qui.
+          </li>
+          <li class="right">
+            Consequatur expedita exercitationem laudantium est neque, animi
+            vitae fuga tempore?
+          </li>
+          <li>
+            Explicabo non quisquam, consequuntur voluptates impedit quidem
+            blanditiis consectetur enim.
+          </li>
+          <li class="right">
+            Inventore reiciendis, aliquid aliquam blanditiis debitis sapiente
+            dolore quaerat tenetur.
+          </li>
+          <li>
+            Temporibus, illum accusamus! Amet vel facere fugit illo eos eum.
+          </li>
+          <li class="right">
+            Rerum dolor quo sed numquam quaerat unde id tempora quia?
+          </li>
+          <li>
+            Non nemo alias recusandae sequi et explicabo enim, eius voluptatum!
+          </li>
+          <li class="right">
+            Nesciunt quod sint officia ab, ex debitis ullam incidunt eaque!
+          </li>
+        </ul>
+        <div class="chat-btn">
+          <div class="chat-msg">
+            <input
+              class="easyui-textbox"
+              data-options="multiline:true;"
+              style="width:60%;height: 100%;border: none;outline: none;"
+            />
+          </div>
+          <div class="chat-send">
+            <a id="btn" href="#" class="easyui-linkbutton">发送</a>
+          </div>
+        </div>
+      </div>
+      <div title="Help" data-options="closable:true">
+        <h1>Help</h1>
+        <ul class="chat-list">
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            quod.
+          </li>
+          <li class="right">
+            Dolores fugiat soluta laborum facilis cumque at magni cupiditate
+            deserunt.
+          </li>
+          <li>
+            Ipsam ab iure aspernatur aliquid enim consectetur quidem, tempora
+            qui.
+          </li>
+          <li class="right">
+            Consequatur expedita exercitationem laudantium est neque, animi
+            vitae fuga tempore?
+          </li>
+          <li>
+            Explicabo non quisquam, consequuntur voluptates impedit quidem
+            blanditiis consectetur enim.
+          </li>
+          <li class="right">
+            Inventore reiciendis, aliquid aliquam blanditiis debitis sapiente
+            dolore quaerat tenetur.
+          </li>
+          <li>
+            Temporibus, illum accusamus! Amet vel facere fugit illo eos eum.
+          </li>
+          <li class="right">
+            Rerum dolor quo sed numquam quaerat unde id tempora quia?
+          </li>
+          <li>
+            Non nemo alias recusandae sequi et explicabo enim, eius voluptatum!
+          </li>
+          <li class="right">
+            Nesciunt quod sint officia ab, ex debitis ullam incidunt eaque!
+          </li>
+        </ul>
+        <div class="chat-btn">
+          <div class="chat-msg">
+            <input
+              class="easyui-textbox"
+              data-options="multiline:true;"
+              style="width:60%;height: 100%;border: none;outline: none;"
+            />
+          </div>
+          <div class="chat-send">
+            <a id="btn" href="#" class="easyui-linkbutton">发送</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#chat-tabs").tabs({
+        tabPosition: "left"
+      });
+    </script>
+  </body>
+</html>

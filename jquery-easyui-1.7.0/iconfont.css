@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "font_family"; /* project id 1426500 */
+  src: url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.eot");
+  src: url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.woff") format("woff"),
+    url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_1426500_tb3gw57wa6n.svg#font_family")
+      format("svg");
+}
